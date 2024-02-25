@@ -12,19 +12,20 @@ body{
 .container{
     display:flex;
     flex-direction:column;
-    margin: auto;
-    margin-top: 200px;
     background: #fff;
     padding-bottom: 30px;
     align-items: center;
-    width: 600px;
+    width: 400px;
+    height: 500px;
+    margin-top: 0px;
+    border:green;
 }
 .header{
     display: flex;
     flex-direction: column;
     align-items: center;
     gap:9px;
-    width:100px;
+    width:50px;
     margin-top: 30px;
 }
 .text{
@@ -40,17 +41,17 @@ body{
     border-radius: 9px;
 }
 .inputs{
-    margin-top: 55px;
+    margin-top: 30px;
     display:flex;
-    gap:25px;
+    gap:15px;
     flex-direction: column;
 }
 .input{
     display: flex;
     align-items: center;
     margin: auto;
-    width: 480px;
-    height: 80px;
+    width: 400px;
+    height: 60px;
     background: #eaeaea;
     border-radius: 6px;
 }
@@ -60,16 +61,17 @@ margin: 0px 30px;
    height: 50px;
 }
 .input input{
-    height: 50px;
-    width: 400px;
+    height: 55px;
+    width: 290px;
     background: transparent;
     border: none;
     outline: none;
     color: #797979;
     font-size: 19px;
+    margin-top: 2px;
 }
 .forgot-password{
-    padding-left: 62px;
+    padding-left: 2px;
     margin-top: 27px;
     font-size: 18px;
     color:#797979;
@@ -79,25 +81,45 @@ span{
     color: #3cb371;
 }
 .submit-container{
-    display: flex;
-    gap:30px;
-    margin: 60px auto;
+   display: flex;
+    gap:20px;
+    margin: 20px;
     color:#fff;
 }
 .submit{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 220px;
-    height: 59px;
+    width: 100px;
+    height: 39px;
     background: #3cb371;
     border-radius: 50px;
     font-size: 19px;
-    font-weight: 700;
+    font-weight: 300;
     cursor: pointer;
 }
 .gray{
     background: #eaeaea;
     color: #676767;
     
+}
+h1{
+    color:white;
+    margin-top: 0;
+    padding: 0%;
+}
+h2{
+    animation: slideIn 2s ease infinite alternate;
+    color:#fff;
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateX(-50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
 }
