@@ -1,0 +1,56 @@
+/* dashboard.css */
+
+.card-header-bg {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.progress-bar-custom {
+    background-color: #28a745;
+}
+
+.list-group-item-primary {
+    background-color: #007bff;
+    color: #fff;
+}
+.fully{
+   
+    align-items: center;
+    justify-content: center;
+
+}
+.h1dash{
+    color:#3cb371;
+    margin-top: 10;
+    margin-left: 690px;
+    padding: 0%;
+    
+}
+.container-dash{
+    /*display:flex;
+    flex-direction:column;*/
+    background:#ecf6f0;
+    padding-bottom: 30px;
+    align-items: center;
+    width: 80%;
+    height: 400px;
+    margin-top: 0px;
+    margin-left: 160px;
+    border:green;
+    font-size: 30px;
+    color: green;
+
+}
+.card{
+    align-items: center;
+    background: #d0d9c3;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    font-size: 25px;  
+}
+.list-group{
+    align-items: center;
+}
+.card-header{
+    color: #582b03;
+}

@@ -7,6 +7,7 @@ import {
 } from "react-router-dom";
 // import signuppage from "./LoginSignUp";
 import LoginSignUp from './LoginSignUp';
+import  DashBoard  from './DashBoard';
 const App = () => {
   return (
     // <Homepage />
@@ -14,6 +15,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Homepage />} />
         <Route path="/signup" element={<LoginSignUp />} />
+        <Route path="/dashboard" element={<DashBoard />}/>
       </Routes>
       </Router>
   )
