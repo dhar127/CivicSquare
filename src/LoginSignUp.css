@@ -2,7 +2,7 @@ body{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     align-items: center;
     justify-content: center;
-    /* background:#3cb371; */
+    /* background-color:#3cb371; */
     height: 100vh;
     -webkit-font-smoothing:antialised;
     -moz-osx-font-smoothin:grayscale;
