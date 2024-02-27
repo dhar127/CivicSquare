@@ -8,6 +8,7 @@ import {
 // import signuppage from "./LoginSignUp";
 import LoginSignUp from './LoginSignUp';
 import  DashBoard  from './DashBoard';
+import Maps from './Maps';
 const App = () => {
   return (
     // <Homepage />
@@ -16,6 +17,7 @@ const App = () => {
         <Route path="/" element={<Homepage />} />
         <Route path="/signup" element={<LoginSignUp />} />
         <Route path="/dashboard" element={<DashBoard />}/>
+        <Route path="/map" element={<Maps />}/>
       </Routes>
       </Router>
   )

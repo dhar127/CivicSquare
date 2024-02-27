@@ -1,56 +1,122 @@
 /* dashboard.css */
 
-.card-header-bg {
-    background-color: #007bff;
-    color: #fff;
-}
-
-.progress-bar-custom {
-    background-color: #28a745;
-}
-
-.list-group-item-primary {
-    background-color: #007bff;
-    color: #fff;
-}
-.fully{
+/* Header Styling */
+.h1dash {
+    color: #187241;
+   align-items: center;
+    margin-top: 10px;
+    font-size: 36px;
    
-    align-items: center;
-    justify-content: center;
-
-}
-.h1dash{
-    color:#3cb371;
-    margin-top: 10;
-    margin-left: 690px;
-    padding: 0%;
     
 }
-.container-dash{
-    /*display:flex;
-    flex-direction:column;*/
-    background:#ecf6f0;
-    padding-bottom: 30px;
-    align-items: center;
-    width: 80%;
-    height: 400px;
-    margin-top: 0px;
-    margin-left: 160px;
-    border:green;
-    font-size: 30px;
-    color: green;
+h3{
+    color: brown;
+}
 
+/* Main Container Styling */
+.fully {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    color:#3cb371;
+    background-color: #cfedde;
 }
-.card{
-    align-items: center;
-    background: #d0d9c3;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    text-align: center;
-    font-size: 25px;  
+
+.container-dash {
+    background: #f3f3f3;
+    padding: 30px;
+    width: 90%;
+    margin-top: 60px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-size: 20px;
 }
-.list-group{
-    align-items: center;
+
+/* Form Styling */
+.card-header {
+    background-color:  #3cb371;
+    color: #fff;
+    padding: 10px 20px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin-bottom: 20px;
+    font-size: 28px;
 }
-.card-header{
-    color: #582b03;
+
+.form-label {
+    font-size: 20px;
+    color: #3cb371;
+}
+
+.form-control {
+    width: 100%;
+    height: 40px;
+    padding: 8px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.btn-primary {
+    background-color: #3cb371;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 24px;
+    border-radius: 5px;
+    cursor: pointer;
+    height: 100px;
+    width: 100px;
+}
+
+.btn-primary:hover {
+    background-color: #115b2b;
+}
+
+/* Card Styling */
+.card {
+    background: #e0e0e0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+    font-size: 20px;
+}
+
+.card-header {
+    color: #fff;
+    font-size: 24px;
+}
+
+.list-group-item {
+    background-color: #f3f3f3;
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.list-group-item span {
+    font-size: 18px;
+    margin-left: 10px;
+}
+/* dashboard.css */
+
+/* Dropdown Styling */
+.form-select {
+    width: 100%;
+    height: 40px;
+    padding: 8px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    border: 1px solid #00cc66; /* Green border color */
+    border-radius: 5px;
+    background-color: #f8fff5; /* Light green background color */
+    color: #333; /* Text color */
+}
+
+.form-select option {
+    background-color: #00cc66; /* Green background color for options */
+    color: #fff; /* Text color for options */
+    font-size: 20px; /* Font size for options */
 }
