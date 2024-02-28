@@ -117,6 +117,8 @@ export default function Homepage() {
                             {/* <Link to="/signup">sign in</Link> */}
                         </tr>
                     </table>
+                    <h3>Send us Your Valuable Feedback</h3>
+                    <NavLink to="/feedback"><button className='feed-btn'>Send here</button></NavLink>
                 </div>
             </div>
 

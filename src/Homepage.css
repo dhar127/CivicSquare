@@ -334,3 +334,10 @@ tr td{
     font-weight: 200;
     font-size: 20px;
 }
+.feed-btn{
+    background-color: white;
+    color: green;
+    /* box-shadow: 0 0 10px 0 white; */
+    margin-top: -2px;
+    font-weight: 600;
+}
