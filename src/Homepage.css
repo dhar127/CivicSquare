@@ -132,11 +132,11 @@ header{
   .herotxt h1 {
     font-size: 100px;
     color: green;
-    margin-left: -17%;
+    /* margin-left: -17%; */
   }
   
   .herotxt p {
-    /* margin-top: -55px; */
+    margin-top: -55px;
     font-size: 30px;
     color: rgb(139, 216, 106);
     font-weight: 500;
