@@ -13,6 +13,7 @@ const Feedback = () => {
     };
 
     return (
+        <div className="full">
         <div className="container">
             <h1>How was your experience?</h1>
             <div className="segmented-control">
@@ -35,6 +36,7 @@ const Feedback = () => {
                     <button id="close-button" onClick={handleCloseClick}>Close</button>
                 </div>
             )}
+        </div>
         </div>
     );
 };

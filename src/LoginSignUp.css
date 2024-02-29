@@ -1,4 +1,4 @@
-body{
+/* body{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     align-items: center;
     justify-content: center;
@@ -8,11 +8,20 @@ body{
     -moz-osx-font-smoothin:grayscale;
     margin: 0;
     color: black;
-}
+} */
 .full{
     align-items: center;
     justify-self: center;
     margin-left: 570px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    align-items: center;
+    justify-content: center;
+    background:#fff;
+    height: 100vh;
+    -webkit-font-smoothing:antialised;
+    -moz-osx-font-smoothin:grayscale;
+    margin: 0;
+    color: black;
 }
 .container{
     display:flex;
