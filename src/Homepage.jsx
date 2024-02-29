@@ -1,6 +1,7 @@
 import React from 'react';
 import "./Homepage.css";
-import about from './assets/about.jpg';
+import about from './assets/about.png';
+import services from "./assets/services.jpg";
 import { NavLink } from "react-router-dom";
 export default function Homepage() {
   return (
@@ -64,7 +65,7 @@ export default function Homepage() {
                 
                 </div>
                 <div className='services-img'>
-                <img src={about} alt="" />
+                <img src={services} alt="" />
                 </div>
             </div>
         </div>
