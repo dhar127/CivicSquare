@@ -13,9 +13,9 @@ const Feedback = () => {
     };
 
     return (
-        <div className="full">
-        <div className="container">
-            <h1>How was your experience?</h1>
+        <div className="fullf">
+        <div className="container-1">
+            <h1 className='h1f'>How was your experience?</h1>
             <div className="segmented-control">
                 <div className="segmented-control__segment">😔</div>
                 <div className="segmented-control__segment">😟</div>
@@ -33,7 +33,7 @@ const Feedback = () => {
             {isPopupVisible && (
                 <div id="popup">
                     <p>Thank you for your feedback!</p>
-                    <button id="close-button" onClick={handleCloseClick}>Close</button>
+                    <button id="close-button" className='buttonf' onClick={handleCloseClick}>Close</button>
                 </div>
             )}
         </div>

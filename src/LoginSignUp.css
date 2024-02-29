@@ -12,7 +12,7 @@
 .full{
     align-items: center;
     justify-self: center;
-    margin-left: 570px;
+    margin-left: 500px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     align-items: center;
     justify-content: center;
@@ -26,14 +26,16 @@
 .container{
     display:flex;
     flex-direction:column;
-    background:#ecf6f0;
+    background:#caf7dc;
     padding-bottom: 30px;
     align-items: center;
-    width: 420px;
-    height: 500px;
+    width: 500px;
+    height: 600px;
     margin-top: 0px;
     border:green;
     align-self:center;
+    box-sizing: border-box;
+    border-radius: 30px;
 }
 .header{
     display: flex;
@@ -48,6 +50,9 @@
     font-size: 48px;
     font-weight: 700;
     align-items: center;
+}
+.h1login{
+    color: #3cb371;
 }
 .underline{
     width: 61px;

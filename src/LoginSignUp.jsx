@@ -21,8 +21,8 @@ const LoginSignUp = () => {
   };
 
   return (
-    <div className='full'>
-       <h1 class="h1log">CIVICSQUARE</h1>
+    <div className='full' align='center'>
+       <h1 className='h1login' >CIVICSQUARE</h1>
       <h2>Empowering Communities, Building Solutions Together</h2>
       <div className="container" >
         <div className="header">
