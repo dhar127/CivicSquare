@@ -1,40 +1,76 @@
 /* dashboard.css */
 
 /* Header Styling */
-.h1dash {
-    color: #187241;
-   align-items: center;
-    margin-top: 10px;
-    font-size: 36px;
-   
-    
-}
-h3{
-    color: brown;
-}
 
+h3{
+    color: #802BB1;
+}
+/* Keyframes for text color change */
+@keyframes colorChange {
+    0% { color: #faf9fc; }
+    50% { color: #b9b0d8; }
+    100% { color: #faf9fc; }
+  }
+  
+  /* Apply animation to h2 element */
+  .h2dash {
+    text-align: center; /* Align text in center */
+    margin-left: auto; /* Center horizontally */
+    margin-right: auto; /* Center horizontally */
+    animation: colorChange 5s infinite; /* Apply text color animation */
+  }
+  
+  /* Apply animation to p element */
+  .pdash {
+    text-align: center; /* Align text in center */
+    margin-left: auto; /* Center horizontally */
+    margin-right: auto; /* Center horizontally */
+    font-size: large;
+    animation: colorChange 5s infinite alternate; /* Apply text color animation */
+  }
+  /* Hover effect for h2 element */
+.h2dash:hover {
+    color: #802BB1; /* Change text color on hover */
+    cursor: pointer;
+    background: linear-gradient(45deg, #802BB1, #4E1678, #2D283E, #1F3864, #4555A3);
+
+    /* Change cursor to pointer on hover */
+  }
+  
+  /* Hover effect for p element */
+  .pdash:hover {
+    color: #2D283E; /* Change text color on hover */
+    cursor: pointer;
+    background: linear-gradient(45deg, #802BB1, #4E1678, #2D283E, #1F3864, #4555A3);
+
+     /* Change cursor to pointer on hover */
+  }
+  
+  
 /* Main Container Styling */
 .fully {
     display: flex;
-    justify-content: center;
+    font-weight: 200;
     width: 100%;
-    color:#3cb371;
-    background-color: #cfedde;
+    color:#802BB1;
+    background-color: #2D283E;
 }
 
 .container-dash {
-    background: #f3f3f3;
+    background: linear-gradient(135deg,rgba(255,255,255,0.1),rgba(255,255,255,0));
+    backdrop-filter: blur(10px);
     padding: 30px;
-    width: 90%;
+    width: 200%;
+    margin-left: 68px;
     margin-top: 60px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     font-size: 20px;
+    border: 1px solid rgba(255,255,255,0.18);
+    box-shadow: 0 8px 32px 0 rgba(0,0,0,0.37);
 }
 
 /* Form Styling */
 .card-header {
-    background-color:  #3cb371;
+    background-color:  #683cb3;
     color: #fff;
     padding: 10px 20px;
     border-top-left-radius: 10px;
@@ -45,7 +81,8 @@ h3{
 
 .form-label {
     font-size: 20px;
-    color: #3cb371;
+    font-weight: 200;
+    color: #fff;
 }
 
 .form-control {
@@ -56,11 +93,12 @@ h3{
     font-size: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    color: #2D283E;
 }
 
 .btn-primary {
-    background-color: #3cb371;
-    color: #fff;
+    background-color: #853cb3;
+    color: transparent;
     border: none;
     padding: 10px 20px;
     font-size: 24px;
@@ -71,7 +109,7 @@ h3{
 }
 
 .btn-primary:hover {
-    background-color: #115b2b;
+    background-color: #683cb3;
 }
 
 /* Card Styling */
@@ -90,7 +128,7 @@ h3{
 }
 
 .list-group-item {
-    background-color: #f3f3f3;
+    background-color: #f5d1ef;
     margin-bottom: 10px;
     padding: 10px 20px;
     border-radius: 5px;
@@ -100,8 +138,33 @@ h3{
     font-size: 18px;
     margin-left: 10px;
 }
-/* dashboard.css */
 
+/* Additional Styling */
+/* Borders */
+.btn btn-primary{
+    color: #fff;
+}
+.form-control,
+.form-select,
+.btn-primary {
+    border: 2px solid #fff; /* White border */
+}
+
+.btn-primary:hover,
+.form-select:hover,
+.form-control:hover {
+    border-color: #802BB1; /* Change border color on hover to #802BB1 */
+}
+
+/* Hovering Effects */
+.list-group-item:hover {
+    background-color: #2D283E; /* Change background color on hover to #2D283E */
+    color: #fff; /* Change text color on hover to white */
+}
+
+.list-group-item:hover span {
+    color: #fff; /* Change span text color on hover to white */
+}
 /* Dropdown Styling */
 .form-select {
     width: 100%;
@@ -109,14 +172,130 @@ h3{
     padding: 8px;
     margin-bottom: 20px;
     font-size: 20px;
-    border: 1px solid #00cc66; /* Green border color */
+    border: 2px solid #ccc; /* Green border color */
     border-radius: 5px;
     background-color: #f8fff5; /* Light green background color */
     color: #333; /* Text color */
 }
+.form-control,
+.form-select {
+    width: 100%;
+    height: 40px;
+    padding: 8px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0); /* Transparent background */
+    color: #ab9cdb;
+}
 
+/* Style the options */
 .form-select option {
-    background-color: #00cc66; /* Green background color for options */
+    background-color: #2D283E; /* Green background color for options */
     color: #fff; /* Text color for options */
     font-size: 20px; /* Font size for options */
 }
+
+/* Hover effect for options */
+.form-select option:hover {
+    background-color:#802BB1; /* Darker green on hover */
+    color: #fff; /* Text color on hover */
+}
+.buttondash{
+    color: #fff;
+    background-color:#802BB1; 
+    padding: 1px 2px 2px 1px;
+    border-radius: 5px;
+
+}
+
+@property --progress-value {
+    syntax: "<integer>";
+    initial-value: 0;
+    inherits: false;
+  }
+  
+  @keyframes progress3 {
+   to { --progress-value: 10; }
+  }
+  
+  .progress-bar3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: 
+      radial-gradient(closest-side, white 79%, transparent 80% 100%),
+      conic-gradient(rgb(208, 155, 21) calc(var(--progress-value) * 1%), pink 0);
+    animation: progress3 2s 1 forwards;
+  }
+  
+  .progress-bar3::before {
+    counter-reset: percentage var(--progress-value);
+    content: counter(percentage) '%';
+    animation: progress3 2s 1 forwards;
+    color:#2D283E;
+  }
+  @property --progress-value {
+    syntax: "<integer>";
+    initial-value: 0;
+    inherits: false;
+  }
+  
+  @keyframes progress {
+   to { --progress-value: 75; }
+  }
+  
+  .progress-bar2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: 
+      radial-gradient(closest-side, white 79%, transparent 80% 100%),
+      conic-gradient(rgb(111, 215, 14) calc(var(--progress-value) * 1%), pink 0);
+    animation: progress 2s 1 forwards;
+  }
+  
+  .progress-bar2::before {
+    counter-reset: percentage var(--progress-value);
+    content: counter(percentage) '%';
+    animation: progress 2s 1 forwards;
+    color:#2D283E;
+  }
+  @property --progress-value {
+    syntax: "<integer>";
+    initial-value: 0;
+    inherits: false;
+  }
+  
+  @keyframes progress1 {
+   to { --progress-value: 100; }
+  }
+  .progress-bar1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: 
+      radial-gradient(closest-side, white 79%, transparent 80% 100%),
+      conic-gradient(rgb(21, 208, 27) calc(var(--progress-value) * 1%), pink 0);
+    animation: progress1 2s 1 forwards;
+  }
+  
+  .progress-bar1::before {
+    counter-reset: percentage var(--progress-value);
+    content: counter(percentage) '%';
+    animation: progress1 2s 1 forwards;
+    color:#2D283E;
+  }

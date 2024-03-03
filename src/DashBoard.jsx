@@ -12,12 +12,13 @@ const Dashboard = () => {
         <div className="fully">
             
             <div className="row">
-                <h1 className="h1dash" align="center">Dashboard</h1>
-
+            <h1 className='h2dash'>Need to solve your issue?</h1>
+  <p className='pdash'>It's your space, we're here to help.</p>
                 <div className="col-md-6">
                     <div className="container-dash" align="center">
                         <div className="card-header">Issue Details</div>
-                        <NavLink to="/map" style={{ textDecoration: 'underline' }}>View your Area's departments</NavLink>
+                        <NavLink to="/map" style={{ textDecoration: 'underline', color: '#fff' }}>View your Area's departments</NavLink>
+
  
                         <div className="card-body">
                             <form onSubmit={handleSubmit} action="https://formsubmit.co/dharaniponnivalavan@gmail.com" method="POST">
@@ -32,7 +33,7 @@ const Dashboard = () => {
                                 </div>
                                 <div className="mb-3">
                                     <label htmlFor="issue" className="form-label">Enter your Area</label>
-                                    <input type="text" className="form-control" id="issue" placeholder="Enter issue" />
+                                    <input type="text" className="form-control" id="issue" placeholder="Enter area" />
                                 </div>
                                 <div className="mb-3">
                                     <label htmlFor="issue" className="form-label">Issue</label>
@@ -52,24 +53,16 @@ const Dashboard = () => {
                                     <label htmlFor="date" className="form-label">Date of Issue</label>
                                     <input type="date" className="form-control" id="date" />
                                 </div>
-                               
-                                <button className="btn btn-primary">Raise Issue</button>
+                             
+                                <button color='white' className='buttondash'>Raise Issue</button><br></br><br></br>
+                                <NavLink to="/prev" className="buttondash">Previous Issues</NavLink>
+
+                             
                             </form>
                         </div>
                     </div>
                 </div>
-                <div className="col-md-6">
-                    <div className="card">
-                        <div className="card-header">Pre Raised Issue List</div>
-                        <div className="card-body">
-                           
-                                <li className="list-group-item"><h3 color='green'>Issue 1: HEALTH </h3><span className="badge badge-primary"> 100% completed✅</span></li><br></br>
-                                <li className="list-group-item" > <h3 color='red'>Issue 2: PWD</h3><span className="badge badge-success"> Closed</span></li><br></br>
-                                <li className="list-group-item"><h3 color='blue'>Issue 3: EB Bill</h3><span className="badge badge-warning"> In Progress</span></li><br></br>
-                            
-                        </div>
-                    </div>
-                </div>
+              
             </div>
             
         </div>

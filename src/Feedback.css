@@ -1,25 +1,75 @@
+/* Feedback.css */
+
 .fullf {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
-    background-color: #f4f4f4;
+    background:#2D283E ;
     font-family: Arial, sans-serif;
 }
-
+#feedback-text{
+    border-radius: 4px;
+    background: transparent;
+    border: 0.5px solid #fff;
+    box-sizing: border-box;
+}
+.beforebtn{
+    background-color: #2D283E;
+    color: #fff;
+}
+.beforebtn:hover{
+    background-color: #2d2872;
+}
+@property --progress-value {
+    syntax: "<integer>";
+    initial-value: 0;
+    inherits: false;
+  }
+  
+  @keyframes progress {
+   to { --progress-value: 75; }
+  }
+  
+  .progress-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: 
+      radial-gradient(closest-side, white 79%, transparent 80% 100%),
+      conic-gradient(rgb(111, 215, 14) calc(var(--progress-value) * 1%), rgb(220, 207, 209) 0);
+    animation: progress 2s 1 forwards;
+  }
+  
+  .progress-bar::before {
+    counter-reset: percentage var(--progress-value);
+    content: counter(percentage) '%';
+    animation: progress 2s 1 forwards;
+    color:#2D283E;
+  }
 .container-1 {
     width: 100%;
     max-width: 600px;
     padding: 20px;
+    margin-left: 70px;
     box-sizing: border-box;
-    background-color: white;
-    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    background: linear-gradient(135deg,rgba(255,255,255,0.1),rgba(255,255,255,0));
+    color: #D1D7E0; /* Light gray text color */
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.18);
+    box-shadow: 0 8px 32px 0 rgba(0,0,0,0.37);
 }
 
 .h1f {
     text-align: center;
     margin-bottom: 20px;
+    color:#fff; /* Purple text color */
 }
 
 .segmented-control {
@@ -32,14 +82,18 @@
     cursor: pointer;
     font-size: 2em;
     transition: transform 0.3s ease;
+    color: #D1D7E0; /* Light gray text color */
 }
 
 .segmented-control__segment:hover {
     transform: scale(1.2);
+    color: #57546f; /* Green text color on hover */
 }
+
 .segmented-control__segment.segmented-control__segment_selected {
-    color: #007BFF;
+    color: #b4d3f4; /* Blue text color for selected segment */
 }
+
 textarea {
     width: 100%;
     padding: 10px;
@@ -58,11 +112,17 @@ textarea {
 .buttonf {
     width: 50%;
     padding: 10px;
-    background-color: #007BFF;
+    background-color: #4C495D; /* Dark gray button background */
     color: white;
     border: none;
     cursor: pointer;
 }
+
+.buttonf:hover {
+    background-color: #D1D7E0; /* Light gray button background on hover */
+    color: #2D283E; /* Dark purple text color on hover */
+}
+
 .hidden {
     display: none;
 }
@@ -73,10 +133,19 @@ textarea {
     left: 50%;
     transform: translate(-50%, -50%);
     padding: 20px;
-    background-color: white;
+    background-color: #ffffff; /* White background */
     border: 1px solid black;
     z-index: 1000;
     width: 50%;
     text-align: center;
+    color: #2D283E; /* Dark purple text color */
+}
 
+#close-button {
+    background-color: #802BB1; /* Purple button background */
+}
+
+#close-button:hover {
+    background-color: #D1D7E0; /* Light gray button background on hover */
+    color: #2D283E; /* Dark purple text color on hover */
 }

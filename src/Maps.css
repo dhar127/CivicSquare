@@ -1,7 +1,46 @@
-maph1{
-    color: green;
-}
-.bg{
-    color: #008000;
-    background: lavenderblush;
-}
+/* Maps.css */
+
+/* Background style for the map */
+.bg {
+    background-color: #2d283e;
+    padding: 20px;
+  }
+  
+  /* Style for the back link */
+  .back-link {
+    color: #802BB1; /* Purple color */
+    font-size: 18px;
+    text-decoration: none;
+  }
+  
+  .back-link:hover {
+    text-decoration: underline; /* Underline the link on hover */
+  }
+  
+  /* Style for the h1 element */
+  .maph1 {
+    color: #802BB1; /* Purple color */
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  /* Container for the map */
+  .map-container {
+    width: 100%;
+    height: 500px; /* Set a fixed height for the map container */
+    border-radius: 1px;
+    margin-top: 20px;
+    overflow: hidden; /* Hide overflow content */
+  }
+  
+  /* Style for the map */
+  .map-container .map {
+    width: 100%;
+    height: 100%;
+  }
+  
+  /* Add box shadow to map container */
+  .map-container .map {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
