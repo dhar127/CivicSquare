@@ -22,12 +22,12 @@ const LoginSignUp = () => {
 
   return (
     <div className='full' align='center'>
-       <h1 className='h1login' >CIVICSQUARE</h1>
-      <h2>Empowering Communities, Building Solutions Together</h2>
+      <h1 className='h1login'>🤝CIVICSQUARE🤝</h1>
+      <h2>Empowering Communities, Building Solutions Together</h2> 
       <div className="container" >
         <div className="header">
           <div className="text">
-            SignUp
+           SignUp
           </div>
           <div className="underline"></div>
         </div>
@@ -50,8 +50,8 @@ const LoginSignUp = () => {
           </div>
         </div>
         <div className="forgot-password" align="center">
-          Lost Password? 
-          <span onClick={handleRecovery}>Click here</span>
+          Lost Password?  
+          <span onClick={handleRecovery}>   Click here</span>
         </div>
         <div className="submit-container">
           <div className="submit" onClick={handleLogin}>
