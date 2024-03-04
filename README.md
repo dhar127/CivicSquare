@@ -30,30 +30,30 @@ CivicSquare simplifies the process of accessing essential public services such a
 
 # Homepage
 
-<img src="/src/assets/home.png" alt="home" width="500" height="500" />
+<img src="/src/assets/home.png" alt="home" width="500" height="300" />
 
 # About
-<img src="/src/assets/about.png" alt="home" width="500" height="500" />
+<img src="/src/assets/about.png" alt="home" width="500" height="300" />
 
 # Services
 
-<img src="/src/assets/service.png" alt="home" width="500" height="500" />
+<img src="/src/assets/service.png" alt="home" width="500" height="300" />
 
 # Contact form
 
-<img src="/src/assets/contact.png" alt="home" width="500" height="500" />
+<img src="/src/assets/contact.png" alt="home" width="500" height="300" />
 
 # Login form
 
-<img src="/src/assets/login.png" alt="home" width="500" height="500" />
+<img src="/src/assets/login.png" alt="home" width="500" height="300" />
 
 # Dashboard page where you can raise your issues
 
-<img src="/src/assets/issue.png" alt="home" width="500" height="500" />
+<img src="/src/assets/issue.png" alt="home" width="500" height="300" />
 
 # Previously raised issue
 
-<img src="/src/assets/prev.png" alt="home" width="500" height="500" />
+<img src="/src/assets/prev.png" alt="home" width="500" height="300" />
 
 ## Installation
 1. Clone the repository: `git clone https://github.com/AshCoder07/CivicSquare.git`
