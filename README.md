@@ -30,7 +30,7 @@ CivicSquare simplifies the process of accessing essential public services such a
 
 #Homepage
 
-<img src="/CivicSquare/src/assets/home.png" alt="home" width="500" />
+<img src="/src/assets/home.png" alt="home" width="500" />
 
 ## Installation
 1. Clone the repository: `git clone https://github.com/AshCoder07/CivicSquare.git`
