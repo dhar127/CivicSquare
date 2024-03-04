@@ -27,7 +27,7 @@ a{
 
 }
 header{
-    position: fixed;
+    position: absolute;
     width: 100%;
     top: 0;
     right: 0;
@@ -35,7 +35,7 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: rgba(255, 255, 255,0.9);
+    background-color: #564f6f;
     /* padding:10px; */
     /* margin: 10px; */
     transition: all 0.5s ease;
@@ -45,31 +45,42 @@ header{
     align-items: center;
 }
 .logo i{
-    color: green;
-    font-size: 30px;
+    color: #2d283e;
+    /* font-size: 100px; */
     margin-right:3px;
 }
 .logo span{
-    color: green;
-    font-size: 1.7rem;
-    font-weight: 400;
+    color: #2d283e;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+.logo span:hover{
+    color: #802bb1;
+    transition: all 0.5s ease;
 }
 .navbar{
     display: flex;
 }
 .navbar a{
-    color: green;
-    font-size: 1.1rem;
+    color: #2d283e;
+    font-size: 1.5rem;
     font-weight: 500;
     padding: 5px 0;
     margin: 0 30px;
     transition: all 0.5s ease;
 }
 .navbar a:hover{
-    color: rgb(139, 216, 106);
+    color: rgb(187, 93, 200);
+    /* text-decoration: underline; */
+    /* border: 2px solid #802bb1; */
+    border-width: 5px;
+    background-color: #2d283e;
+    border-radius: 10px;
+    padding: 10px;
 }
 .navbar a.active{
-    color: rgb(139, 216, 106);
+    color: #802bb1;
+    border: 2px solid #802bb1;
 } 
 .navbar li{
     list-style: none;
@@ -81,8 +92,8 @@ header{
 .main a{
     margin-right: 25px;
     margin-left: 10px;
-    color: green;
-    font-size: 1.1rem;
+    color: #2d283e;
+    font-size: 1.5rem;
     font-weight: 500;
     transition: all 0.5s ease;
 }
@@ -91,15 +102,46 @@ header{
     align-items: center;
 }
 .user i{
-    color: green;
+    color: #2d283e;
     font-size: 28px;
     margin-right: 7px;
 }
 .main a:hover{
-    color: rgb(139, 216, 106);
+    /* color: rgb(187, 93, 200); */
+    color: rgb(187, 93, 200);
+    /* text-decoration: underline; */
+    /* border: 2px solid #802bb1; */
+    border-width: 5px;
+    background-color: #2d283e;
+    border-radius: 10px;
+    padding: 10px;
 }
+.typewriter p{
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid #2d283e; 
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    text-decoration: underline;
+    /* letter-spacing: .15em; Adjust as needed */
+    animation: 
+      typing 3.5s steps(40, end),
+      blink-caret .75s step-end infinite;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #2d283e; }
+  }
 .hero{
-    background-image: url("https://images.unsplash.com/photo-1487700160041-babef9c3cb55?q=80&w=2052&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    /* background-image: url("https://images.unsplash.com/photo-1487700160041-babef9c3cb55?q=80&w=2052&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"); */
+    background-color: #2d283e;
     background-size:100% 100%;
     background-repeat: no-repeat;
     
@@ -124,27 +166,36 @@ header{
   
   .herotxt {
     /* text-align: right; */
-    margin-left: 55%;
-    margin-top: 15%;
-    animation: bounce 3s infinite;
+    margin-left: 10%;
+    margin-top: 3%;
+    /* animation: bounce 3s infinite; */
+    /* border-left: 10px solid #802bb1; */
+    /*  */
   }
-  
+
   .herotxt h1 {
-    font-size: 100px;
-    color: green;
+    font-size: 175px;
+    color: #802bb1;
     /* margin-left: -17%; */
   }
   
   .herotxt p {
-    margin-top: -55px;
-    font-size: 30px;
-    color: rgb(139, 216, 106);
+    margin-top: -70px;
+    margin-left: 15px;
+    font-size: 50px;
+    color: #802bb1;
     font-weight: 500;
+    border-left: 8px solid #802bb1;
+    }
+    .typing-animation {
+        font-family: monospace;
+        font-size: 2em;
+        color: #802bb1;
     }
 
 .about{
-    background-color: white;
-    /* margin-top:-35px; */
+    background-color: #564f6f;
+    margin-top:-35px;
     /* display: flex; */
     text-align: center;
     padding-bottom: 30px;
@@ -154,7 +205,7 @@ header{
     text-align: center;
     margin-top: 2%;
     font-size: 50px;
-    color: green;
+    color: #d1d7e0;
     font-weight: 300;
 }
 .about-container{
@@ -173,16 +224,18 @@ header{
 .about-content{
     /* border: 2px solid black; */
     width: 45%;
+    position: relative;
 }
+
 .about-content h1{
-    font-size: 30px;
-    color: green;
+    font-size: 2.5rem;
+    color: #d1d7e0;
     font-weight: 400;
     text-align: left;
 }
 .about-content p{
-    font-size: 19px;
-    color: green;
+    font-size: 2rem;
+    color: #d1d7e0;
     font-weight: 300;
     text-align: left;
     text-align: justify;    
@@ -194,8 +247,8 @@ header{
 
 }
 .services{
-    background-color: whitesmoke;
-    /* margin-top:-35px; */
+    background-color: #2D283E;
+    margin-top:-35px;
     /* display: flex; */
     text-align: center;
     padding-bottom: 30px;
@@ -205,7 +258,7 @@ header{
     text-align: center;
     margin-top: 2%;
     font-size: 50px;
-    color: green;
+    color: #802bb1;
     font-weight: 300;
 }
 .services-container{
@@ -229,13 +282,13 @@ header{
 }
 .services-content h1{
     font-size: 30px;
-    color: green;
+    color: #802bb1;
     font-weight: 400;
     text-align: left;
 }
 .services-content p{
-    font-size: 19px;
-    color: green;
+    font-size: 2.2rem;
+    color: #802bb1;
     font-weight: 300;
     text-align: left;
     text-align: justify;
@@ -249,7 +302,7 @@ header{
 .contact{
     background-color: white;
     /* margin-top:-20px; */
-    margin-top: 5%;
+    /* margin-top: 5%; */
 }
 .service{
     background-color: whitesmoke;
@@ -260,28 +313,35 @@ header{
     margin-bottom: -20px;
     /* padding: 5%; */
     padding:2% 5% 2% 5%;
+    background-color: #4c495d;
+    /* border-radius: 20px; */
 }
 .contact h1{
     text-align: center;
-    color: green;
+    color: #d1d7e0;
     margin-top: -20px;
 }
 .contact-box{
-    background-color: white;
+    background-color: #d1d7e0;
     display: flex;
     width: 100%;
 }
+
 .contact-left{
     flex-basis: 60%;
     padding: 40px 60px;
-    color: green;
-    background-color: white;
+    color: #802bb1;
+    background-color: #d1d7e0;
+
 }
 .contact-right{
     flex-basis: 40%;
     padding: 40px;
-    background-color: green;
+    background-color: #802bb1;
     color: white;
+}
+.contact-right h3{
+    color: #2D283E;
 }
 .input-row{
     display: flex;
@@ -295,28 +355,29 @@ header{
 input{
     width: 100%;
     border: none;
-    border-bottom: 1px solid green;
+    border-bottom: 1px solid #802bb1;
     outline: none;
     padding-bottom: 5px;
     padding-top: 10px;
-    color: green;
+    color: #802bb1;
 }
 label{
     font-weight: 200;
+    color: #802bb1;
 }
 textarea{
     width: 100%;
     border: none;
-    border: 1px solid green;
+    border: 1px solid #802bb1;
     outline: none;
     padding-bottom: 5px;
     padding-top: 10px;
     margin-top: 10px;
-    color: green;
+    color: #802bb1;
     box-sizing: border-box;
 }
 button{
-    background-color: green;
+    background-color: #802bb1;
     width: 100px;
     border: none;
     outline: none;
@@ -324,8 +385,14 @@ button{
     height: 35px;
     border-radius: 30px;
     margin-top: 20px;
+    font-weight: 600;
     cursor: pointer;
-    box-shadow: 0 0 10px 0 rgb(139, 216, 106); 
+    /* box-shadow: 0 0 10px 0 rgb(139, 216, 106);  */
+}
+button:hover{
+    background-color: #af85c0;
+    box-shadow: 0 0 10px 0 #c873fa; 
+    transition: all 0.5s ease;
 }
 tr td:first-child{
     padding-right: 20px;
@@ -337,7 +404,7 @@ tr td{
 }
 .feed-btn{
     background-color: white;
-    color: green;
+    color: #802bb1;
     /* box-shadow: 0 0 10px 0 white; */
     margin-top: -2px;
     font-weight: 600;
