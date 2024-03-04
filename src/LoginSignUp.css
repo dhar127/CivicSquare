@@ -144,6 +144,9 @@ span{
     cursor: pointer;
     color: #fff;
 }
+.submit:hover{
+    color:#45f3ff;
+}
 .gray{
     background: #eaeaea;
     color: #676767;

@@ -2,9 +2,13 @@ import React from 'react';
 import "./Homepage.css";
 
 import about1 from './assets/about1.png';
-
+import github from './assets/github.png';
+import whatsapp from './assets/whatsapp.png';
+import linkedin from './assets/linkedin.png';
 import services from "./assets/services.jpg";
 import { NavLink } from "react-router-dom";
+import gmail from "./assets/gmail.png";
+import  insta from "./assets/insta.png";
 export default function Homepage() {
   return (
     <>
@@ -104,25 +108,42 @@ export default function Homepage() {
                     </form>
                 </div>
                 <div className="contact-right">
-                    <h3>Reach us</h3>
-                    <table>
-                        <tr>
-                            <td>Email</td>
-                            <td>contactus@gmail.com</td>
-                        </tr>
-                        <tr>
-                            <td>Phone</td>
-                            <td>+91 9876543210</td>
-                        </tr>
-                        <tr>
-                            <td>Address</td>
-                            <td>123, ABC Road,<br /> XYZ City,<br /> 123456</td>
-                            {/* <Link to="/signup">sign in</Link> */}
-                        </tr>
-                    </table>
-                    <h3>Send us Your Valuable Feedback</h3>
-                    <NavLink to="/feedback"><button className='feed-btn'>Send here</button></NavLink>
-                </div>
+    <h3>Reach us</h3>
+    <table>
+        <tr>
+            <td>Email</td>
+            <td>contactus@gmail.com</td>
+        </tr>
+        <tr>
+            <td>Phone</td>
+            <td>+91 9876543210</td>
+        </tr>
+       
+        <tr>
+            <td>Address</td>
+            <td>123, ABC Road,<br /> XYZ City,<br /> 123456</td>
+        </tr>
+      
+        <h3>Send us Your Valuable Feedback</h3>
+    <NavLink to="/feedback"><button className='feed-btn'>Send here</button></NavLink>
+    <tr>
+            
+            <td><a href="https://wa.me/7305841274?text=Hello%20Dharani!!" target="_blank" rel="noopener noreferrer"><img src={whatsapp}></img></a>
+       
+            
+            <a href="https://www.instagram.com/d_p12.7/" target="_blank" rel="noopener noreferrer"><img src={insta}></img></a>
+       
+            <br></br><br></br>
+           <a href="https://github.com/dhar127" target="_blank" rel="noopener noreferrer"><img src={github}></img></a>
+      
+           
+            <a href="https://www.linkedin.com/in/dharani-p-57327b259/" target="_blank" rel="noopener noreferrer"><img src={linkedin}></img></a></td>
+        </tr>
+    </table>
+   
+</div>
+
+
             </div>
             <div className="footer-bottom">
                 <h4>&copy; 2024 CivicSquare. All Rights Reserved.</h4>
