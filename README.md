@@ -27,9 +27,7 @@ CivicSquare simplifies the process of accessing essential public services such a
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/React_Logo_SVG.svg/1200px-React_Logo_SVG.svg.png" alt="react" width="200"/>
 
 ## Snapshots
-[Include screenshots or links to screenshots showcasing the output of your project. Provide visual representations of key features or user interfaces.]
 
-[Add screenshots here]
 
 ## Installation
 1. Clone the repository: `git clone https://github.com/AshCoder07/CivicSquare.git`
