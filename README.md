@@ -28,9 +28,32 @@ CivicSquare simplifies the process of accessing essential public services such a
 
 ## Snapshots
 
-#Homepage
+# Homepage
 
 <img src="/src/assets/home.png" alt="home" width="500" />
+
+# About
+<img src="/src/assets/about.png" alt="home" width="500" />
+
+# Services
+
+<img src="/src/service/service.png" alt="home" width="500" />
+
+# Contact form
+
+<img src="/src/assets/contact.png" alt="home" width="500" />
+
+# Login form
+
+<img src="/src/assets/login.png" alt="home" width="500" />
+
+# Dashboard page where you can raise your issues
+
+<img src="/src/assets/issue.png" alt="home" width="500" />
+
+# Previously raised issue
+
+<img src="/src/assets/prev.png" alt="home" width="500" />
 
 ## Installation
 1. Clone the repository: `git clone https://github.com/AshCoder07/CivicSquare.git`
