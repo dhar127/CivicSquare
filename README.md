@@ -23,7 +23,7 @@ CivicSquare simplifies the process of accessing essential public services such a
 
 ## Tech Stack
 - React js
-![React Logo](https://www.google.com/url?sa=i&url=https%3A%2F%2Fgithub.com%2Ftopics%2Freact-ui&psig=AOvVaw3qYBJUiX1HwtlDxdzFndUo&ust=1709656902746000&source=images&cd=vfe&opi=89978449&ved=0CBMQjRxqFwoTCIjBvLWG24QDFQAAAAAdAAAAABAE)
+![React Logo](https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/React_Logo_SVG.svg/1200px-React_Logo_SVG.svg.png)
 
 ## Snapshots
 [Include screenshots or links to screenshots showcasing the output of your project. Provide visual representations of key features or user interfaces.]
