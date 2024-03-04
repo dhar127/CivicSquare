@@ -1,0 +1,75 @@
+.issue-item {
+    margin-bottom: 20px;
+    background-color: transparent;
+  }
+  
+  .issue-description {
+    position: relative;
+  }
+  
+  .issue-description h3 {
+    margin-bottom: 10px;
+    font-size: 20px;
+  }
+  
+  .issue-description .badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    align-items: center;
+  }
+  .cardprev{
+    background: transparent;
+  }
+  .issue-description .badge img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .previmg {
+    border: 2px solid rebeccapurple;
+    width: 300px; /* Increased width */
+    height: 800px; /* Increased height */
+    transition: transform 0.3s ease; /* Add transition effect */
+  }
+  
+  .previmg:hover {
+    transform: scale(1.1); /* Scale up image on hover */
+  }
+  
+  .progress-bar {
+    width: 0;
+    height: 4px;
+    background-color: #007bff; /* Change color based on issue type */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: width 0.5s ease; /* Add animation for progress bar */
+  }
+  
+  .issue-description:hover  {
+  color: #802bb1;
+  font-size: 25px;
+  
+  }
+  
+  /* Additional hovering effect */
+  .issue-item:hover  {
+    background-color: #e0daed; /* Change text color on hover */
+  }
+  
+  .issue-item:hover .issue-description .badge img {
+    width: 100px; /* Increase width on hover */
+    height: 100px; /* Increase height on hover */
+    filter: brightness(70%); /* Decrease brightness on hover */
+  }
+  .card-bodyprev{
+    background: linear-gradient(135deg,rgba(255,255,255,0.1),rgba(255,255,255,0));
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.18);
+    border-radius: 30px;
+    box-shadow: 0 8px 32px 0 rgba(0,0,0,0.37);
+  }

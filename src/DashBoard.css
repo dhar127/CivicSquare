@@ -30,7 +30,7 @@ h3{
   }
   /* Hover effect for h2 element */
 .h2dash:hover {
-    color: #802BB1; /* Change text color on hover */
+    color: #e3d2ec; /* Change text color on hover */
     cursor: pointer;
     background: linear-gradient(45deg, #802BB1, #4E1678, #2D283E, #1F3864, #4555A3);
 
@@ -45,7 +45,41 @@ h3{
 
      /* Change cursor to pointer on hover */
   }
+  .pdash{
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid #2d283e; 
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    text-decoration: underline;
+    color: #ccc;
+    /* letter-spacing: .15em; Adjust as needed */
+    animation: 
+      typing 3.5s steps(40, end),
+      blink-caret .75s step-end infinite;
+  }
+  .h2dash{
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid #2d283e; 
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    text-decoration: underline;
+    /* letter-spacing: .15em; Adjust as needed */
+    animation: 
+      typing 3.5s steps(40, end),
+      blink-caret .75s step-end infinite;
+  }
   
+  
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #2d283e; }
+  }
   
 /* Main Container Styling */
 .fully {
@@ -299,3 +333,4 @@ h3{
     animation: progress1 2s 1 forwards;
     color:#2D283E;
   }
+  

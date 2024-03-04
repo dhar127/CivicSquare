@@ -54,7 +54,7 @@ const Dashboard = () => {
                                     <input type="date" className="form-control" id="date" />
                                 </div>
                              
-                                <button color='white' className='buttondash'>Raise Issue</button><br></br><br></br>
+                                <button color='white' className='buttondash'><NavLink to="/" className="buttondash">Raise Issue</NavLink></button><br></br><br></br>
                                 <NavLink to="/prev" className="buttondash">Previous Issues</NavLink>
 
                              
@@ -62,7 +62,7 @@ const Dashboard = () => {
                         </div>
                     </div>
                 </div>
-              
+                <NavLink to="/" className="back-link">👈Back To Home</NavLink><br/>
             </div>
             
         </div>
@@ -70,3 +70,4 @@ const Dashboard = () => {
 };
 
 export default Dashboard;
+

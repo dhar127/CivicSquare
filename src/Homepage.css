@@ -246,6 +246,24 @@ header{
     border-radius: 10%;
 
 }
+.highlight {
+    /* Apply a different color */
+    color: #Fff; /* Example color */
+
+    /* Apply animation */
+    animation: highlightText 1.5s infinite alternate; /* Example animation */
+}
+
+/* Define animation */
+@keyframes highlightText {
+    0% {
+       color:#Fff; /* Start color */
+    }
+    100% {
+        color:#2D283E; /* End color */
+    }
+}
+
 .services{
     background-color: #2D283E;
     margin-top:-35px;
@@ -303,6 +321,7 @@ header{
     background-color: white;
     /* margin-top:-20px; */
     /* margin-top: 5%; */
+    border-radius: 15px;
 }
 .service{
     background-color: whitesmoke;
@@ -325,6 +344,7 @@ header{
     background-color: #d1d7e0;
     display: flex;
     width: 100%;
+    border-radius: 15px;
 }
 
 .contact-left{
@@ -332,6 +352,7 @@ header{
     padding: 40px 60px;
     color: #802bb1;
     background-color: #d1d7e0;
+    border-radius: 15px;
 
 }
 .contact-right{
@@ -339,6 +360,7 @@ header{
     padding: 40px;
     background-color: #802bb1;
     color: white;
+    border-radius: 15px;
 }
 .contact-right h3{
     color: #2D283E;
@@ -409,3 +431,48 @@ tr td{
     margin-top: -2px;
     font-weight: 600;
 }
+.about-img img {
+    animation: scaleAndColor 2s ease-in-out infinite alternate; /* Apply animation */
+  }
+  
+  @keyframes scaleAndColor {
+    0% {
+      transform: scale(1); /* Start scale */
+      filter: hue-rotate(0deg); /* Start color */
+    }
+    100% {
+      transform: scale(1.1); /* End scale */
+      filter: hue-rotate(360deg); /* End color */
+    }
+  }
+  @keyframes slideInFromLeft {
+    from {
+      transform: translateX(-100%); /* Start position */
+      opacity: 0; /* Start opacity */
+    }
+    to {
+      transform: translateX(0); /* End position */
+      opacity: 1; /* End opacity */
+    }
+  }
+  
+  .about-img img {
+    animation: slideInFromLeft 2s ease; /* Apply animation */
+  }
+  @keyframes slideInFromRight {
+    from {
+      transform: translateX(100%); /* Start position */
+      opacity: 0; /* Start opacity */
+    }
+    to {
+      transform: translateX(0); /* End position */
+      opacity: 1; /* End opacity */
+    }
+  }
+  
+  .services-img img {
+    animation: slideInFromRight 2s ease; /* Apply animation */
+  }
+  h4{
+    color: #d1d7e0;
+  }

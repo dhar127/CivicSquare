@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './Feedback.css';
-
+import { NavLink } from 'react-router-dom';
 const Feedback = () => {
     const [isPopupVisible, setPopupVisible] = useState(false);
 
@@ -14,6 +14,8 @@ const Feedback = () => {
 
     return (
         <div className="fullf">
+           
+
         <div className="container-1">
             <h1 className='h1f'>How was your experience?</h1>
             <div className="segmented-control">
@@ -33,8 +35,8 @@ const Feedback = () => {
             <input type="text" className="input" placeholder="Email" />
             <label htmlFor="feedback-text">Your Feedback:</label>
             <textarea id="feedback-text" name="feedback-text" rows="4" cols="50"></textarea>
-            <button id="submit-button" onClick={handleButtonClick} className='beforebtn'>Submit</button>
-
+            <button id="submit-button" onClick={handleButtonClick} className='beforebtn'>Submit</button><br></br>
+            <NavLink to="/" className="back-link">👈Back To Home</NavLink><br/>
             {isPopupVisible && (
                 <div id="popup">
                     <p>Thank you for your feedback!</p>
@@ -42,7 +44,9 @@ const Feedback = () => {
                 </div>
             )}
         </div>
+       
         </div>
+        
     );
 };
 

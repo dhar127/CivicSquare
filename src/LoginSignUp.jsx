@@ -64,6 +64,8 @@ const LoginSignUp = () => {
            </div>
         </div>
       </div>
+      <NavLink to="/" className="back-link">👈Back To Home</NavLink><br/>
+
     </div>
   )
 }

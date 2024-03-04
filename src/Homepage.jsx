@@ -1,6 +1,8 @@
 import React from 'react';
 import "./Homepage.css";
-import about from './assets/about.png';
+
+import about1 from './assets/about1.png';
+
 import services from "./assets/services.jpg";
 import { NavLink } from "react-router-dom";
 export default function Homepage() {
@@ -40,14 +42,14 @@ export default function Homepage() {
             <h1>What are we?</h1>
             <div className="about-container">
                 <div className='about-img'>
-                    <img src={about} alt="" />
+                    <img src={about1} alt=""  className='animated-img'/>
                     {/* <h1>img</h1> */}
                     {/* <h1>img</h1> */}
                 </div>
                 <div className='about-content'>
                     <h1>About us</h1>
-                    <p>The goal is to make public amenities easier to access and more efficient to ensure that people may easily interact with their local government.Our application CivicSquare offers a range of features designed for convenient and efficient access to public services.</p>
-                    {/* <p>Access public services from anywhere, anytime, eliminating the need for physical visits to government offices.Minimize expenses for citizens by eliminating the need for travel and paperwork associated with accessing public services, ultimately saving time and money.</p>
+                    <p>The goal is to make public amenities <span class="highlight">easier to access </span>and more efficient to ensure that people may easily interact with their local government. Our application <span class="highlight">CivicSquare</span> offers a range of features designed for <span class="highlight">convenient</span> and efficient access to public services.</p>
+ {/* <p>Access public services from anywhere, anytime, eliminating the need for physical visits to government offices.Minimize expenses for citizens by eliminating the need for travel and paperwork associated with accessing public services, ultimately saving time and money.</p>
                     <p>By providing user-friendly tools and streamlined processes, our application CivicSquare aims to enhance efficiency and convenience, ultimately improving the overall experience of accessing public amenities.Empower's mission to simplify access to governmental services through the CivicSquare application addresses the frustration and inefficiency individuals face in interacting with local government. </p> */}
                 </div>
             </div>
@@ -59,9 +61,9 @@ export default function Homepage() {
                     
                     {/* <h1>img</h1> */}
                     {/* <h1>img</h1> */}
-                    <p>The goal is to make public amenities easier to access and more efficient to ensure that people may easily interact with their local government.Our application CivicSquare offers a range of features designed for convenient and efficient access to public services.</p>
-                    {/* <p>Access public services from anywhere, anytime, eliminating the need for physical visits to government offices.Minimize expenses for citizens by eliminating the need for travel and paperwork associated with accessing public services, ultimately saving time and money.</p>
-                    <p>By providing user-friendly tools and streamlined processes, our application CivicSquare aims to enhance efficiency and convenience, ultimately improving the overall experience of accessing public amenities.Empower's mission to simplify access to governmental services through the CivicSquare application addresses the frustration and inefficiency individuals face in interacting with local government. </p> */}
+                    {/* <p>The goal is to make public amenities easier to access and more efficient to ensure that people may easily interact with their local government.Our application CivicSquare offers a range of features designed for convenient and efficient access to public services.</p> */}
+                    <p>Access public services from anywhere, anytime, eliminating the need for physical visits to government offices.<span class="highlight">Minimize expenses</span>  for citizens by eliminating the need for travel and paperwork associated with <span class="highlight">accessing public services</span> , ultimately saving time and money.</p>
+                    {/* <p>By providing user-friendly tools and streamlined processes, our application CivicSquare aims to enhance efficiency and convenience, ultimately improving the overall experience of accessing public amenities.Empower's mission to simplify access to governmental services through the CivicSquare application addresses the frustration and inefficiency individuals face in interacting with local government. </p>  */}
                 
                 </div>
                 <div className='services-img'>
@@ -122,7 +124,9 @@ export default function Homepage() {
                     <NavLink to="/feedback"><button className='feed-btn'>Send here</button></NavLink>
                 </div>
             </div>
-
+            <div className="footer-bottom">
+                <h4>&copy; 2024 CivicSquare. All Rights Reserved.</h4>
+            </div>
         </div>
     </>
   );
