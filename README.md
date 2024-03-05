@@ -21,6 +21,14 @@ CivicSquare simplifies the process of accessing essential public services such a
 - A commuter wants to submit a request for public transportation improvements in their area.
 - A user wants to provide feedback on the quality of services received from a government agency.
 
+## Features
+- **User-friendly Interface:** Intuitive and easy-to-use interface for seamless navigation and service request submission.
+- **Real-time Updates:** Stay informed about the status of service requests with instant notifications and updates.
+- **Search Functionality:** Quickly find specific services or departments using the built-in search bar.
+- **Feedback Mechanism:** Provide feedback and suggestions to help improve public service delivery.
+- **Efficient Data Handling:** Optimal data retrieval and management strategies ensure smooth operation without the need for database storage.
+
+
 ## Tech Stack
 - React js
 <!-- ![React Logo](https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/React_Logo_SVG.svg/1200px-React_Logo_SVG.svg.png) -->
